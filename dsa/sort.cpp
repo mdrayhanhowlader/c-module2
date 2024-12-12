@@ -14,14 +14,15 @@
 using namespace std;
 
 int main(){
-    int a = 10;
-    cout << &a << endl; 
-    int * ptr = &a;
-    cout << ptr << endl;
-    // dereference the pointer
-    cout << *ptr << endl;   
-    *ptr = 20;
-    cout << ptr << endl;
-    cout << *ptr << endl;
+    char s[100];
+    cin.getline(s, 100);
+    int sz = strlen(s);
+    sort(s, s + sz);
+    cout << s << endl;
+     for(int i = 0; i < sz; i++){
+        if(s[i] != 32){
+            cout << s[i];
+        }
+     }
     return 0;
 }

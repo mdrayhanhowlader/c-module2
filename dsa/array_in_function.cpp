@@ -13,15 +13,19 @@
 #include<cstdlib>
 using namespace std;
 
+
+int* func (){
+   int *arr =  new int[5];
+    for(int i = 0; i < 5; i++){
+        cin >> arr[i]; 
+    }
+   
+    return arr;
+};
 int main(){
-    int a = 10;
-    cout << &a << endl; 
-    int * ptr = &a;
-    cout << ptr << endl;
-    // dereference the pointer
-    cout << *ptr << endl;   
-    *ptr = 20;
-    cout << ptr << endl;
-    cout << *ptr << endl;
+    int *ar =  func();
+    for(int i = 0; i < 5; i++){
+        cout << ar[i] << " ";
+    }
     return 0;
 }

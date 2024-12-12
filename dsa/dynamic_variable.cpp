@@ -14,14 +14,8 @@
 using namespace std;
 
 int main(){
-    int a = 10;
-    cout << &a << endl; 
-    int * ptr = &a;
-    cout << ptr << endl;
-    // dereference the pointer
-    cout << *ptr << endl;   
-    *ptr = 20;
-    cout << ptr << endl;
-    cout << *ptr << endl;
+    int* a = new int;
+    cin >> *a;
+    cout << *a << endl; 
     return 0;
 }
